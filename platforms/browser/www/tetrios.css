@@ -1,16 +1,27 @@
+@font-face {
+  font-family: TetrisText;
+  src: url(TetrisText.ttf);
+}
+
 body {
-  background-color: #222
+  background-color: #222;
+  font-family: TetrisText, monospace;
+}
+
+:first-child {
+  margin-top: 0;
 }
 
 div#content {
   display: grid;
-  grid-template-columns: 20vw 60vw 20vw;
-  grid-template-rows: 10vh 25vh 35vh 30vh;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 2fr 4fr 7fr 3fr;
   grid-template-areas: "ccRotate  info      cwRotate"
                        "ccRotate  board     cwRotate"
                        "leftMove  board     rightMove"
                        "hardDrop  softDrop  softDrop";
   grid-gap: .2em;
+  height: 97vh;
 }
 
 div#ccRotate {
@@ -30,18 +41,22 @@ div#info {
 
 div#nextPiece {
   grid-area: nextPiece;
+  background-color: gray;
 }
 
 div#score {
   grid-area: score;
+  background-color: lightgray;
 }
 
 div#lines {
   grid-area: lines;
+  background-color: gray;
 }
 
 div#level {
   grid-area: level;
+  background-color: lightgray;
 }
 
 div#cwRotate {

@@ -1,11 +1,11 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "helloworld",
-  "short_name": "helloworld",
+  "name": "Tetrios",
+  "short_name": "Tetrios",
   "version": "com.phonegap.helloworld",
-  "description": "A blank PhoneGap app.",
-  "author": "PhoneGap Team",
+  "description": "A Tetris app made in PhoneGap.",
+  "author": "Charles Moonen",
   "icons": [],
   "start_url": "index.html"
 }
