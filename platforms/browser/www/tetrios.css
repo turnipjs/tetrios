@@ -1,0 +1,75 @@
+body {
+  background-color: #222
+}
+
+div#content {
+  display: grid;
+  grid-template-columns: 20vw 60vw 20vw;
+  grid-template-rows: 10vh 25vh 35vh 30vh;
+  grid-template-areas: "ccRotate  info      cwRotate"
+                       "ccRotate  board     cwRotate"
+                       "leftMove  board     rightMove"
+                       "hardDrop  softDrop  softDrop";
+  grid-gap: .2em;
+}
+
+div#ccRotate {
+  grid-area: ccRotate;
+}
+
+div#info {
+  grid-area: info;
+  background-color: #333;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "nextPiece score"
+                       "nextPiece lines"
+                       "nextPiece level";
+}
+
+div#nextPiece {
+  grid-area: nextPiece;
+}
+
+div#score {
+  grid-area: score;
+}
+
+div#lines {
+  grid-area: lines;
+}
+
+div#level {
+  grid-area: level;
+}
+
+div#cwRotate {
+  grid-area: cwRotate;
+}
+
+div#board {
+  grid-area: board;
+  background-color: black;
+}
+
+div#leftMove {
+  grid-area: leftMove;
+}
+
+div#rightMove {
+  grid-area: rightMove;
+}
+
+div#hardDrop {
+  grid-area: hardDrop;
+}
+
+div#softDrop {
+  grid-area: softDrop;
+}
+
+div.gameControl {
+  background-color: #333;
+  border: .1em solid #444;
+}
